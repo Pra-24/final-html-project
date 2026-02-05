@@ -1,0 +1,177 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+      </head>
+      <body>
+        <h1>Course Registration Form</h1>
+        <form>
+          <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+              <tr>
+                <td><label>First Name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="first_name"
+                    placeholder="Ex: Pranavi"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Surname</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="surname"
+                    placeholder="ammineni"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Mobile Number</label></td>
+                <td>
+                  <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Ex: 1234567890"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Email</label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="navipra25@gmail.com"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="min 5 characters"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Confirm Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    placeholder="min 5 characters"
+                    size="15"
+                    required
+                  />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>DOB</label></td>
+                <td><input type="date" name="dob" /></td>
+              </tr>
+    
+              <tr>
+                <td><label>Age</label></td>
+                <td>
+                  <input type="number" name="age" min="18" max="100" required />
+                </td>
+              </tr>
+    
+              <tr>
+                <td><label>Gender </label></td>
+                <td>
+                  <input type="radio" name="gender" value="male" />Male
+                  <input type="radio" name="gender" value="male" />Female
+                  <input type="radio" name="gender" value="male" />Others
+                </td>
+              </tr>
+              <tr>
+                <td><label>Select Country</label></td>
+                <td>
+                  <select name="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="china">China</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label>Upload picture</label></td>
+                <td><input type="file" name="picture" /></td>
+              </tr>
+              <tr>
+                <td><input type="reset" /></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Course Details</legend>
+            <table>
+              <tr>
+                <td><label> Select course </label></td>
+                <td>
+                  <select name="course">
+                    <option>Java Full Stack</option>
+                    <option>DSA</option>
+                    <option>AI</option>
+                    <option>Data Science</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label>Delivery Mode</label></td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="delivery_mode"
+                    value="online"
+                  />Online
+                  <input
+                    type="checkbox"
+                    name="delivery_mode"
+                    value="offline"
+                  />Offline
+                </td>
+              </tr>
+              <tr>
+                <td><label>INSTITUTE NAME</label></td>
+                <td><input type="text" value="TAP ACADEMY" readonly /></td>
+              </tr>
+              <tr>
+                <td><label>Choose your present coding knowledge level</label></td>
+                <td><input type="range" /></td>
+              </tr>
+              <tr>
+                <td><label>Comments</label></td>
+                <td><textarea rows="5" cols="30"></textarea></td>
+              </tr>
+            </table>
+          </fieldset>
+          <input type="submit" />
+        </form>
+      </body>
+    </html>
